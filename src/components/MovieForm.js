@@ -1,0 +1,39 @@
+import React from 'react'
+
+
+class MovieForm extends React.Component {
+    state = {
+        title: "",
+        synopsis: ""
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        //push up to app
+        //reset form
+
+    }
+
+    handleChange = (event) => {
+        //set state of change from the form by target.name and : target.value
+    }
+
+
+
+    render() {
+        return (
+            <div>
+                <form>
+                    <h3>Add Movie</h3>
+                    <input type="text" name="name" placeholder="Movie Title" ></input>
+                    <input type="text" name="synopsis" placeholder="Movie Synopsis" ></input>
+                    <input type="Submit" value="Add Movie"></input>
+                </form>
+                
+            </div>
+        )
+    }
+}
+
+
+export default MovieForm

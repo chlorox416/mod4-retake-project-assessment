@@ -4,7 +4,7 @@ import React from 'react'
 
 const RentContainer = (props) => {
     const renderRentMovies = () => {
-        return props.rentArray.map(movieObj => <h3>{movieObj.id}</h3>)
+        return props.rentArray.map(movieObj => <h3>{movieObj.id} {movieObj.title}</h3>)
     }
 
 

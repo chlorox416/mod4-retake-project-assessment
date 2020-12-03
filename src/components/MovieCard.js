@@ -3,6 +3,10 @@ import React from 'react'
 
 class MovieCard extends React.Component {
 
+    state = {
+        clicked: false
+    }
+
 
 
     clickHandler = () => {
@@ -13,14 +17,19 @@ class MovieCard extends React.Component {
         this.props.rentHandler(this.props.movieObj)
     }
 
+    // toggleHandler = () => {
+    //     this.setState({ clicked: !this.state.clicked})
+    // }
+
 
 
     render() {
         return (
             <div name='card'>
                 <h3>{this.props.movieObj.title}</h3>
-                <button onClick={this.clickHandler} >Rent Movie</button>
                 <p>{this.props.movieObj.synopsis}</p>
+                <button onClick={this.clickHandler} >Rent Movie</button>
+                <button >Show Synopsis</button>
             </div>
         )
     }
