@@ -11,7 +11,7 @@
 
 ## Deliverables
 
-- User can see a list of all movie titles
+<!-- - User can see a list of all movie titles -->
 - User can filter the movie list by title
 - User can click on a `show synopsis` button that renders the movie's synopsis
 - User can click on a `rent movie` button and add that movie to their `Rented Movies` list
