@@ -24,7 +24,7 @@ class MovieForm extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit {/* add onSubmit={this.handleSubmit}  */}>
+                <form onSubmit> {/* add onSubmit={this.handleSubmit}  */}
                     
                     <h3>Add Movie</h3>
                     <input type="text" name="name" placeholder="Movie Title" {/* add Change={this.handleChange}*/}></input>
