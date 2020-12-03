@@ -1,11 +1,8 @@
 import React from 'react'
 import './App.css';
 import MovieContainer from './components/MovieContainer'
+import MovieForm from './components/MovieForm';
 import RentContainer from './components/RentContainer';
-
-
-
-
 
 class App extends React.Component {
   
@@ -49,7 +46,7 @@ class App extends React.Component {
         <h1>Movies</h1>
         <MovieContainer movieArray={this.state.movieArray} rentHandler={this.rentHandler}/>
         <RentContainer rentArray={this.state.rentArray}/>
-        {/* <MovieForm/> */}
+        <MovieForm addMovie={this.addMovie}/>
       </div>
     )
   }

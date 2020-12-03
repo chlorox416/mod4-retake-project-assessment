@@ -9,13 +9,14 @@ class MovieForm extends React.Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        //push up to app
+        this.props.addMovie(this.state)
         //reset form
 
     }
 
     handleChange = (event) => {
         //set state of change from the form by target.name and : target.value
+        // this.setState ({ event.target.name : event.target.value})
     }
 
 
